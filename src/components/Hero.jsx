@@ -11,7 +11,7 @@ const Hero = () => {
 
       <p className="mt-4 text-lg text-white-100">
         MSc Decision & Computing Science @ CIT <br />
-        <b>Data Analyst</b>
+        <b>Aspiring Data Analyst</b>
       </p>
 
       <div className="mt-6">
