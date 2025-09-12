@@ -74,7 +74,7 @@ const Feedbacks = () => {
       <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}>
         <div>
           <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
+          <h2 className={styles.sectionHeadText}>Testimonials</h2>
         </div>
       </div>
       <div
@@ -89,3 +89,4 @@ const Feedbacks = () => {
 };
 
 export default SectionWrapper(Feedbacks, "");
+
