@@ -18,8 +18,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
+    const { name, value } = e.target;
 
     setForm({
       ...form,
@@ -31,18 +30,20 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    // Current time for template
+    const currentTime = new Date().toLocaleString();
+
     emailjs
       .send(
-        "service_suxk9gn", // ✅ Your Service ID
-        "template_qqdhg3e", // ✅ Your Template ID
+        "service_suxk9gn", // Your Service ID
+        "template_qqdhg3e", // Your Template ID
         {
-          from_name: form.name,
-          to_name: "Arvind",
-          from_email: form.email,
-          to_email: "arvind.d0028@gmail.com",
-          message: form.message,
+          name: form.name,        // matches {{name}} in template
+          email: form.email,      // matches {{email}} in template
+          message: form.message,  // matches {{message}} in template
+          time: currentTime,      // matches {{time}} in template (optional)
         },
-        "OcbuClXyUA1ao3G5a" // ✅ Your Public Key
+        "OcbuClXyUA1ao3G5a" // Your Public Key
       )
       .then(
         () => {
@@ -58,16 +59,13 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
           alert("Ahh, something went wrong. Please try again.");
         }
       );
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -75,11 +73,7 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
-        >
+        <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
@@ -134,5 +128,6 @@ const Contact = () => {
 };
 
 export default SectionWrapper(Contact, "contact");
+
 
 
