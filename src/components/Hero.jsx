@@ -11,7 +11,7 @@ const Hero = () => {
 
       <p className="mt-4 text-lg text-white-100">
         MSc Decision & Computing Science @ CIT <br />
-        <b>Aspiring Data Analyst</b>
+        <b>Aspiring Data Scientist | Machine Learning Enthusiast | Power BI Developer</b>
       </p>
 
       <div className="mt-6">
