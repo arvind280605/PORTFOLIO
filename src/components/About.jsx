@@ -11,10 +11,8 @@ const About = () => {
         I'm <b>Arvind D</b>, a 3rd-year MSc student in 
         <b> Decision and Computing Science</b> at 
         <b> Coimbatore Institute of Technology (CIT)</b>. <br /><br />
-        My goal is to become a <b>Data Analyst</b> who can transform raw data into
-        meaningful insights. I have strong skills in <b>Python, SQL, Excel</b>, 
-        and <b>Power BI</b>, and I enjoy building dashboards and analyzing datasets 
-        to solve real-world problems.
+       I am a Data Science & Machine Learning enthusiast skilled in Python, Power BI, and ML model development. I work on projects involving data analysis, dashboards, classification models, and visualization. I enjoy exploring datasets, building prediction models, and solving real-world problems through analytics.
+
       </p>
     </section>
   );
