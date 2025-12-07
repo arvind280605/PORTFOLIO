@@ -61,7 +61,7 @@ export const projects = [
     { name: "PyTorch", color: "yellow-text-gradient" },
     { name: "Streamlit", color: "orange-text-gradient" },
   ],
-  image: web,    // you can replace this with an AI brain image if you want
+  // you can replace this with an AI brain image if you want
   source_code_link: "https://github.com/arvind280605/FakeNews_AI_Detector",
 },
 
@@ -77,7 +77,7 @@ export const projects = [
     { name: "Full-Stack", color: "yellow-text-gradient" },
     { name: "HTML/CSS/JS", color: "orange-text-gradient" },
   ],
-  image: web,  // I can generate a Smart Bike PNG if you want
+    // I can generate a Smart Bike PNG if you want
   source_code_link: "https://github.com/arvind280605/Smart-bike-rental-and-tracking-system",
   live_demo: "https://smart-bike-rental-and-tracking-system.onrender.com",
 },
@@ -108,7 +108,7 @@ export const projects = [
     { name: "TensorFlow", color: "yellow-text-gradient" },
     { name: "Streamlit", color: "orange-text-gradient" },
   ],
-  image: web, // you can replace this with a custom insurance/fraud icon
+   // you can replace this with a custom insurance/fraud icon
   source_code_link: "https://github.com/arvind280605/Insurance-Policy-and-Fraud-Prediction",
 },
 
