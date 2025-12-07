@@ -4,7 +4,8 @@ import {
   excel,
   powerbi,   // ✅ Power BI
   cit,       // ✅ CIT logo
-  homeIcon   // ✅ import the Home icon
+  homeIcon 
+  AI// ✅ import the Home icon
 } from "../assets";
 
 
@@ -20,6 +21,8 @@ export const services = [
   { title: "Python Programming", icon: python },
   { title: "SQL Databases", icon: sql },
   { title: "Excel Analytics", icon: excel },
+  { title: "Power BI Dashboards", icon: powerbi },   // ✅ Add this
+  { title: "AI / Machine Learning", icon: AI },      // ✅ Add your new AI icon
 ];
 
 // Technologies
@@ -27,7 +30,9 @@ export const technologies = [
   { name: "Python", icon: python },
   { name: "SQL", icon: sql },
   { name: "Excel", icon: excel },
-  { name: "Power BI", icon: powerbi },  // ✅ added here
+  { name: "Power BI", icon: powerbi },
+  { name: "Artificial Intelligence", icon: AI },
+// ✅ added here
 ];
 
 // Experiences
@@ -61,7 +66,7 @@ export const projects = [
     { name: "PyTorch", color: "yellow-text-gradient" },
     { name: "Streamlit", color: "orange-text-gradient" },
   ],
-  // you can replace this with an AI brain image if you want
+  image: AI,
   source_code_link: "https://github.com/arvind280605/FakeNews_AI_Detector",
 },
 
@@ -108,7 +113,8 @@ export const projects = [
     { name: "TensorFlow", color: "yellow-text-gradient" },
     { name: "Streamlit", color: "orange-text-gradient" },
   ],
-   // you can replace this with a custom insurance/fraud icon
+   image: AI,
+// you can replace this with a custom insurance/fraud icon
   source_code_link: "https://github.com/arvind280605/Insurance-Policy-and-Fraud-Prediction",
 },
 
