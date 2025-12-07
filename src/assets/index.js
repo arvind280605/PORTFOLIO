@@ -6,7 +6,8 @@ import backend from "./backend.png";
 import web from "./web.png";
 import mobile from "./mobile.png";
 import powerbi from "./powerbi.png"; // ✅ PowerBI logo
-import cit from "./cit.png"; // ✅ CIT logo
+import cit from "./cit.png";
+import AI from "./AI.png";
 
 // Projects
 import carrent from "./carrent.png";
@@ -48,5 +49,6 @@ export {
   herobg,
   image,
   thirdTestimonial,
-  homeIcon,   // ✅ added Home icon to exports
+  homeIcon,
+  AI,// ✅ added Home icon to exports
 };
