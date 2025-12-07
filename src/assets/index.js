@@ -8,6 +8,7 @@ import mobile from "./mobile.png";
 import powerbi from "./powerbi.png"; // ✅ PowerBI logo
 import cit from "./cit.png";
 import AI from "./AI.png";
+import bike from "./bike.png";
 
 // Projects
 import carrent from "./carrent.png";
@@ -50,5 +51,6 @@ export {
   image,
   thirdTestimonial,
   homeIcon,
-  AI,// ✅ added Home icon to exports
+  AI,
+  bike,
 };
