@@ -18,9 +18,8 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-  live_demo,   // ✅ added safely
+  live_demo, // ✅ added safely
 }) => {
-
   const cardRef = useRef(null);
 
   useEffect(() => {
@@ -31,17 +30,17 @@ const ProjectCard = ({
       el,
       {
         opacity: 0,
-        y: 100, // Start off-screen
+        y: 100,
       },
       {
         opacity: 1,
         y: 0,
         scrollTrigger: {
           trigger: el,
-          start: "top bottom",  // Trigger when the top of the element hits the bottom of the viewport
-          end: "top center",    // End when the top reaches the center of the viewport
-          scrub: true,          // Smoothly sync scroll and animation
-          markers: false,       // Set to `true` to see debug markers
+          start: "top bottom",
+          end: "top center",
+          scrub: true,
+          markers: false,
         },
       }
     );
@@ -57,6 +56,7 @@ const ProjectCard = ({
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
+        {/* Project Image */}
         <div className="relative w-full h-[230px]">
           <img
             src={image}
@@ -79,23 +79,24 @@ const ProjectCard = ({
         </div>
 
         {/* Live Demo Button */}
-{live_demo && (
-  <div className="mt-3">
-    <button
-      onClick={() => window.open(live_demo, "_blank")}
-      className="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition"
-    >
-      Live Demo
-    </button>
-  </div>
-)}
+        {live_demo && (
+          <div className="mt-3">
+            <button
+              onClick={() => window.open(live_demo, "_blank")}
+              className="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition"
+            >
+              Live Demo
+            </button>
+          </div>
+        )}
 
-
+        {/* Project Info */}
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 
+        {/* Tags */}
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p
@@ -113,9 +114,8 @@ const ProjectCard = ({
 
 const Works = () => {
   useEffect(() => {
-    // Stagger effect for project cards
     gsap.fromTo(
-      ".project-card", // Select all project cards
+      ".project-card",
       {
         opacity: 0,
         y: 100,
@@ -123,13 +123,13 @@ const Works = () => {
       {
         opacity: 1,
         y: 0,
-        stagger: 0.1, // Stagger delay of 0.3 seconds between each card
+        stagger: 0.1,
         scrollTrigger: {
           trigger: ".works-container",
-          start: "top bottom",  // Trigger when the top of the container reaches the bottom
+          start: "top bottom",
           end: "top center",
           scrub: true,
-          markers: false, // Set to true to see debug markers
+          markers: false,
         },
       }
     );
@@ -144,7 +144,9 @@ const Works = () => {
 
       <div className="w-full flex">
         <p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+          Following projects showcase my skills and experience through real-world examples of my work.
+          Each project is briefly described with links to code repositories and live demos. It reflects
+          my ability to solve complex problems, work with different technologies, and manage projects effectively.
         </p>
       </div>
 
@@ -160,4 +162,3 @@ const Works = () => {
 };
 
 export default SectionWrapper(Works, "projects");
-
