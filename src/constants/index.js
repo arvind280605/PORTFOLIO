@@ -7,7 +7,10 @@ import {
   homeIcon, 
   AI,
   bike,
-} from "../assets";
+  Tars Ken,
+  third testimonial,
+  image,
+  } from "../assets";
 
 
 // Navigation Links
