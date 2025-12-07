@@ -4,7 +4,7 @@ import {
   excel,
   powerbi,   // ✅ Power BI
   cit,       // ✅ CIT logo
-  homeIcon 
+  homeIcon, 
   AI// ✅ import the Home icon
 } from "../assets";
 
