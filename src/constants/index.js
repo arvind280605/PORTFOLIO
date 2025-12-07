@@ -6,6 +6,7 @@ import {
   cit,       // ✅ CIT logo
   homeIcon, 
   AI,
+  bike,
 } from "../assets";
 
 
@@ -82,7 +83,7 @@ export const projects = [
     { name: "Full-Stack", color: "yellow-text-gradient" },
     { name: "HTML/CSS/JS", color: "orange-text-gradient" },
   ],
-    // I can generate a Smart Bike PNG if you want
+    image: bike,// I can generate a Smart Bike PNG if you want
   source_code_link: "https://github.com/arvind280605/Smart-bike-rental-and-tracking-system",
   live_demo: "https://smart-bike-rental-and-tracking-system.onrender.com",
 },
