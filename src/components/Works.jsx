@@ -18,7 +18,9 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
+  live_demo,   // ✅ added safely
 }) => {
+
   const cardRef = useRef(null);
 
   useEffect(() => {
@@ -75,6 +77,19 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
+
+        {/* Live Demo Button */}
+{live_demo && (
+  <div className="mt-3">
+    <button
+      onClick={() => window.open(live_demo, "_blank")}
+      className="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition"
+    >
+      Live Demo
+    </button>
+  </div>
+)}
+
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
