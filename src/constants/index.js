@@ -122,6 +122,20 @@ export const projects = [
   source_code_link: "https://github.com/arvind280605/Insurance-Policy-and-Fraud-Prediction",
 },
 
+{
+  name: "Hirex – Job Search Web Application",
+  description:
+    "Hirex is a user-friendly job searching web application that helps users find relevant job opportunities based on preferred job titles and filters. It fetches job listings from multiple platforms and allows one-click redirection to the official job site for applying.",
+  tags: [
+    { name: "HTML", color: "blue-text-gradient" },
+    { name: "CSS", color: "green-text-gradient" },
+    { name: "JavaScript", color: "pink-text-gradient" },
+    { name: "Web Application", color: "yellow-text-gradient" },
+    { name: "GitHub", color: "orange-text-gradient" },
+  ],
+  image: AI,// replace with your project image or icon
+  source_code_link: "https://github.com/arvind280605/Hirex.git",
+},
 
   
 ];
