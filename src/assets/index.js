@@ -42,7 +42,7 @@ export {
   creator,
   proj1,
   project3,
-  Tars Ken,
+  tarsKen,
   github,
   logo,
   menu,
