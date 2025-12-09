@@ -135,9 +135,7 @@ export const projects = [
   ],
   image: AI,// replace with your project image or icon
   source_code_link: "https://github.com/arvind280605/Hirex.git",
-},
-
-  
+}
 ];
 
 // Testimonials
