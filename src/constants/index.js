@@ -141,7 +141,7 @@ export const projects = [
 // Testimonials
 export const testimonials = [
   {
-    name: "Ananya",
+    name: "Ana",
     testimonial: "This portfolio is amazing!",
     designation: "Student",
     company: "Coimbatore Institute of Technology",
