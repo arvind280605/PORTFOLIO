@@ -7,8 +7,8 @@ import {
   homeIcon, 
   AI,
   bike,
-  Tars Ken,
-  third testimonial,
+  TarsKen,
+  thirdtestimonial,
   image,
   } from "../assets";
 
