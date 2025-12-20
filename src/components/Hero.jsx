@@ -11,7 +11,9 @@ const Hero = () => {
 
       <p className="mt-4 text-lg text-white-100">
         MSc Decision & Computing Science @ CIT <br />
-        <b>Aspiring Data Scientist | Machine Learning Enthusiast | Power BI Developer</b>
+        <b>
+          Aspiring Data Scientist | Machine Learning Enthusiast | Power BI Developer
+        </b>
       </p>
 
       <div className="mt-6">
@@ -21,6 +23,16 @@ const Hero = () => {
           className="w-40 h-40 rounded-full object-cover border-2 border-[#915EFF]"
         />
       </div>
+
+      {/* Resume Button */}
+      <a
+        href="/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-6 inline-block bg-[#915EFF] text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition"
+      >
+        Download Resume
+      </a>
     </section>
   );
 };

@@ -1,6 +1,6 @@
-// src/constants/index.js
 export const navLinks = [
   { id: "about", title: "About" },
-  { id: "projects", title: "Projects" },
+  { id: "work", title: "Work" },
   { id: "contact", title: "Contact" },
+  { id: "resume", title: "Resume" },
 ];
