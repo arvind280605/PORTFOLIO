@@ -58,7 +58,7 @@ const Navbar = () => {
             >
               {nav.id === "resume" ? (
                 <a
-                  href="/resume.pdf"
+                  href={`${import.meta.env.BASE_URL}resume.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
