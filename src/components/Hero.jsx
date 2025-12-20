@@ -24,15 +24,7 @@ const Hero = () => {
         />
       </div>
 
-      {/* Resume Button */}
-      <a
-        href={`${import.meta.env.BASE_URL}resume.pdf`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-6 inline-block bg-[#915EFF] text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition"
-      >
-        Download Resume
-      </a>
+      
     </section>
   );
 };
