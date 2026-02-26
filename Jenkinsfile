@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        sonarQube 'SonarScanner'
+    }
+
     stages {
 
         stage('Checkout') {
@@ -9,15 +13,22 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('SonarQube Analysis') {
             steps {
-                echo "Building Application"
+                withSonarQubeEnv('My Sonar Server') {
+                    sh '''
+                    sonar-scanner \
+                    -Dsonar.projectKey=portfolio \
+                    -Dsonar.sources=. \
+                    -Dsonar.host.url=http://localhost:9000
+                    '''
+                }
             }
         }
 
-        stage('Test') {
+        stage('Build') {
             steps {
-                echo "Testing Application"
+                echo "Build Successful"
             }
         }
     }
