@@ -12,7 +12,13 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('My Sonar Server') {
-                    sh 'sonar-scanner'
+                    sh '''
+                    sonar-scanner \
+                    -Dsonar.projectKey=portfolio \
+                    -Dsonar.projectName=portfolio \
+                    -Dsonar.sources=. \
+                    -Dsonar.host.url=http://localhost:9000
+                    '''
                 }
             }
         }
